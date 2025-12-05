@@ -1,18 +1,26 @@
-.venv/
-
+# OS / python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
+.DS_Store
+Thumbs.db
 
-espn_analytics/duckdb/
+# Virtual envs
+venv/
+.env
+.env.*
 
-raw/
-
+# Data & DBs
 *.csv
+espn_analytics/duckdb/*.duckdb
+raw/
+player_stats.csv
 
+# dbt generated/build
+espn_analytics/target/
 espn_analytics/run/
 espn_analytics/compiled/
+espn_analytics/logs/
 
-.vscode/
-.idea/
+# Logs
+logs/
+scripts/logs/
