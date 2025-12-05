@@ -1,0 +1,45 @@
+[0m17:58:34.035666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027587F8B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027585E342D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027589203C50>]}
+
+
+============================== 17:58:34.041843 | c66f44c5-01e7-4110-aa48-f593b14a6cb0 ==============================
+[0m17:58:34.041843 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m17:58:34.042387 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\Jaxon Terrell\\.dbt', 'printer_width': '80', 'write_json': 'True', 'use_colors': 'True', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt init espn_analytics', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m17:58:34.078183 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Jaxon Terrell\.dbt
+[0m17:58:34.080330 [debug] [MainThread]: Starter project path: C:\Users\Jaxon Terrell\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m17:58:34.107845 [info ] [MainThread]: 
+Your new dbt project "espn_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:58:34.108439 [info ] [MainThread]: Setting up your profile.
+[0m17:58:41.506379 [info ] [MainThread]: Profile espn_analytics written to C:\Users\Jaxon Terrell\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m17:58:41.507331 [debug] [MainThread]: Command `dbt init` succeeded at 17:58:41.507220 after 7.56 seconds
+[0m17:58:41.507654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002758A1F2780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027588B31130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002758A285D00>]}
+[0m17:58:41.507976 [debug] [MainThread]: Flushing usage events
+[0m17:58:41.663840 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:58:47.036033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB54257620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB521742D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB56497C50>]}
+
+
+============================== 19:58:47.039217 | bccd07ac-c759-4f0d-b154-692729db2e0f ==============================
+[0m19:58:47.039217 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m19:58:47.039796 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Jaxon Terrell\\.dbt', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m19:58:47.040228 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Jaxon Terrell\CodingProjects\ESPNDataAnalyzer\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:58:47.040891 [debug] [MainThread]: Command `dbt run` failed at 19:58:47.040798 after 0.15 seconds
+[0m19:58:47.041155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB564DC640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB56504170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB5534DE10>]}
+[0m19:58:47.041433 [debug] [MainThread]: Flushing usage events
+[0m19:58:47.210928 [debug] [MainThread]: An error was encountered while trying to flush usage events

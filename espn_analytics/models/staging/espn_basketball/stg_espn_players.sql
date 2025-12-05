@@ -1,0 +1,56 @@
+{{ config(materialized='view') }}
+
+WITH source AS (
+    SELECT * 
+    FROM {{ source('espn_basketball', 'players') }}
+)
+
+SELECT
+    player_id,team_id,
+    sport,
+    first_name,
+    last_name,
+    full_name,
+    team_name,
+    stats_page_link,
+    position,
+    active_status,
+    total_games_played,
+    avg_minutes,
+    avg_personal_fouls,
+    total_double_doubles,
+    total_triple_doubles,
+    total_disqualifications,
+    total_ejections,
+    total_technical_fouls,
+    total_flagrant_fouls,
+    total_minutes,
+    total_rebounds,
+    total_personal_fouls,
+    avg_rebounds,
+    avg_points,
+    avg_field_goal_makes,
+    avg_field_goal_attempts,
+    avg_field_goal_pctg,
+    avg_3pt_makes,
+    avg_3pt_attempts,
+    avg_3pt_pctg,
+    avg_ft_makes,
+    avg_ft_attempts,
+    avg_ft_pctg,
+    avg_assists,
+    avg_turnovers,
+    total_points,
+    total_field_goal_makes,
+    total_field_goal_attempts,
+    total_3pt_makes,
+    total_3pt_attempts,
+    total_ft_makes,
+    total_ft_attempts,
+    total_assists,
+    total_turnovers,
+    avg_steals,
+    avg_blocks,
+    total_steals,
+    total_blocks
+FROM source

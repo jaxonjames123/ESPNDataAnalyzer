@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: espn_basketball
+    schema: main
+    tables:
+      - name: players
+        description: "Raw player generic data from ESPN basketball API"
+        identifier: players
+        columns:
+        - name: player_id
+          tests:
+            - not_null
+            - unique
+        - name: team_id
+          tests:
+            - not_null
